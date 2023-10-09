@@ -10,10 +10,18 @@
           <input type="password" name="password" placeholder="Senha" v-model="password" />
         </div>
         <button id="btn" type="submit">Login</button>
+        <div class="create">
+          <span>Ainda não tem conta?<a href="http://localhost:8080/cadastrar" id="create-account-link"> Crie uma Conta.</a></span>
+        </div>
       </div>
     </form>
   </div>
 </template>
+
+// O método "Login" é responsável por enviar uma solicitação de login para a API
+// com as informações do CPF e senha do usuário. Se as credenciais forem válidas,
+// a resposta da API é armazenada no localStorage e o usuário é redirecionado para a página inicial.
+// Caso contrário, exibe uma mensagem de erro.
 
 <script>
 import { useToast } from 'vue-toast-notification';
@@ -59,7 +67,15 @@ export default {
 
 }
 
-
-
 </script>
-<style scoped></style>
+<style scoped>
+
+.create{
+  margin-top: 20px;
+  text-align: center;
+}
+.create span a {
+  color: var(--green-color);
+}
+
+</style>

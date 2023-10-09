@@ -27,6 +27,11 @@
   </div>
 </template>
 
+// Este componente Vue é responsável por lidar com o cadastro de usuários.
+// Ele envia uma requisição para a API com os dados do usuário e exibe uma notificação de sucesso ou erro
+// dependendo da resposta da API. Após um cadastro bem-sucedido, o usuário é redirecionado para a página de login.
+
+
 <script>
 
 import { useToast } from 'vue-toast-notification';

@@ -4,14 +4,14 @@
         <div class="home-links">
             <div class="btn-process">
                 <a href="http://localhost:8080/processojudicial">
-                    <img src="../assets/registrar.png" alt="" width="30px" height="30px">
+                    <img src="../assets/registrar.png" alt="">
                     Registrar um Processo
                 </a>
             </div>
 
             <div class="btn-process">
                 <a href="http://localhost:8080/processosregistrados">
-                    <img src="../assets/registros.png" alt="" width="30px" height="30px">
+                    <img src="../assets/registros.png" alt="">
                     Processos registrados
                 </a>
             </div>
@@ -20,10 +20,7 @@
     </div>
 </template>
 
-
-
 <script>
-
 
 </script>
 
@@ -42,14 +39,26 @@
 }
 
 .btn-process {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0 50px;
 }
 
+.btn-process img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
 .btn-process a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--green-color);
     color: var(--white-color);
-    padding: 13px;
     width: 100%;
+    padding: 20px 15px;
     text-transform: uppercase;
     border-radius: 25px;
     font-size: 14px;
@@ -61,6 +70,11 @@
 }
 
 .btn-process a:hover {
-    background-color: var(--blue-color);
+    transform: translateY(-2px);
+}
+
+.btn-process a:active {
+    transform: translateY(2px);
 }
 </style>
+

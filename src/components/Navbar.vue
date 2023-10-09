@@ -3,8 +3,6 @@
         <route-link to="/" id="pge-url">
             <img :src="pge" :alt="alt" id="pge">
         </route-link>
-        <routerLink to="/login">Login</routerLink>
-        <routerLink to="/cadastrar">Cadastrar</routerLink>
     </div>
 </template>
 <script>

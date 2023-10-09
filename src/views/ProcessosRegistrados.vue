@@ -1,4 +1,9 @@
 <template>
+    <div class="nav">
+        <a href="http://localhost:8080/home">
+            <img src="../assets/home.png" alt="home">
+        </a>
+    </div>
     <div class="process">
         <h2>Processos Registrados</h2>
         <table border="1">
@@ -8,7 +13,7 @@
                     <th>Advogado</th>
                     <th>CPF</th>
                     <th>Processo</th>
-                    <th>Ações</th> <!-- Coluna para os botões -->
+                    <th>Ações</th>
                 </tr>
             </thead>
             <tbody>
@@ -38,20 +43,27 @@
     </div>
 </template>
 
-
-
-
-
 <script>
 
 
 
 </script>
 
-
-
-
 <style scoped="">
+.nav {
+    position: absolute;
+    right: 0;
+    margin-top: 30px;
+    margin-right: 50px;
+}
+
+.nav img {
+    width: 50px;
+    transition: all .5s;
+}
+.nav img:hover{
+    transform: scale(1.1);
+}
 .process {
     flex-direction: column;
 }
@@ -101,6 +113,7 @@ button {
     margin: 3px 5px;
     text-align: center;
 }
+
 #deletar {
     background-color: #e8544F;
 }
